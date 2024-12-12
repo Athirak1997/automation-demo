@@ -44,11 +44,11 @@ public void radiobutton() {
 	public static void main(String[] args) {
 		Sample sample=new Sample();
 		sample.initialisation();
-	//	sample.java();
-		//sample.check();
-		//sample.radiobutton();
+	    sample.java();
+		sample.check();
+		sample.radiobutton();
 		sample.dropdown2();
-	//	sample.selected();
+	    sample.selected();
 	}
 
 }
