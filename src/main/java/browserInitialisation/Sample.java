@@ -29,7 +29,7 @@ public void check() {
 	checkbox.click();
 	System.out.println(checkbox.isSelected());
 }
-public void selecteds() {
+public void selected() {
 	driver.navigate().to("https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 	WebElement select=driver.findElement(By.xpath("//input[@value='cabbage']"));
 	select.click();
@@ -48,7 +48,7 @@ public void radiobutton() {
 		sample.check();
 		//sample.radiobutton();
 		sample.dropdown2();
-	    sample.selecteds();
+	    sample.selected();
 	}
 
 }
