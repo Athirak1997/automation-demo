@@ -35,7 +35,7 @@ public void selected() {
 	select.click();
 	System.out.println(select.isEnabled());
 }
-public void radiobuttons() {
+public void radiobutton() {
 	driver.navigate().to("https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 	WebElement radio=driver.findElement(By.xpath("//input[@value='blue']"));
 	radio.click();
@@ -46,7 +46,7 @@ public void radiobuttons() {
 		sample.initialisation();
 	    sample.java();
 		sample.check();
-		//sample.radiobuttons();
+		//sample.radiobutton();
 		sample.dropdown2();
 	    sample.selected();
 	}
