@@ -13,17 +13,12 @@ public class DropDown extends Base {
 		//select.selectByValue("Red");
 		select.selectByIndex(2);
 	}
-public void java() {
-	driver.navigate().to("https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
-	WebElement javadrop=driver.findElement(By.id("dropdowm-menu-1"));
-	Select select1=new Select(javadrop);
-	select1.selectByIndex(2);
-}
+
 	public static void main(String[] args) {
 		DropDown droppdown=new DropDown();
 		droppdown.initialisation();
-		//droppdown.drop();
-		droppdown.java();
+		droppdown.drop();
+
 	}
 
 }
