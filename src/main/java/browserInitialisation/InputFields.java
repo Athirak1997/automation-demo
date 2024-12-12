@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class InputFields extends Base {
-	public void enterInput() {
+	public void enterInputs() {
 		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
 		WebElement inputfield1=driver.findElement(By.id("value-a"));
 		inputfield1.sendKeys("20");
@@ -18,7 +18,7 @@ public class InputFields extends Base {
 	public static void main(String[] args) {
 		InputFields inputFields=new InputFields()	;
 		inputFields.initialisation(); 
-		inputFields.enterInput();
+		inputFields.enterInputs();
 		
 	}
 
