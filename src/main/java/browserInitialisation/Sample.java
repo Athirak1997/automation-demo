@@ -46,7 +46,7 @@ public void radiobutton() {
 		sample.initialisation();
 	    sample.java();
 		sample.check();
-		//sample.radiobutton();
+		sample.radiobutton();
 		sample.dropdown2();
 	    sample.selected();
 	}
