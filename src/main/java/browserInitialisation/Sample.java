@@ -35,6 +35,11 @@ public void selected() {
 	select.click();
 	System.out.println(select.isEnabled());
 }
+public void option() {
+	driver.navigate().to("https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+	WebElement element2=driver.findElement(By.xpath("//input[@value='option-2']"));
+	System.out.println(element2.isSelected());
+}
 public void radiobutton() {
 	driver.navigate().to("https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 	WebElement radio=driver.findElement(By.xpath("//input[@value='blue']"));
@@ -49,6 +54,7 @@ public void radiobutton() {
 		sample.radiobutton();
 		sample.dropdown2();
 	    sample.selected();
+	    sample.option();
 	}
 
 }
