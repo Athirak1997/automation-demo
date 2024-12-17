@@ -1,12 +1,17 @@
 package browserInitialisation;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Sample extends Base {
+public class Sample  {
+	public WebDriver driver;
 	public void java() {
+		driver=new ChromeDriver();
 		driver.navigate().to("https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		driver.manage().window().maximize();
 		WebElement javadrop=driver.findElement(By.id("dropdowm-menu-1"));
 		Select select1=new Select(javadrop);
 		select1.selectByIndex(2);
@@ -48,7 +53,7 @@ public void radiobutton() {
 }
 	public static void main(String[] args) {
 		Sample sample=new Sample();
-		sample.initialisation();
+	
 	    sample.java();
 		sample.check();
 		sample.radiobutton();
